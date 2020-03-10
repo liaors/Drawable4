@@ -2,6 +2,7 @@ package comt.example.administrator.drawable4;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -29,7 +30,7 @@ public class SlideMenu extends FrameLayout {
 
     /**
      * 当1级的子view全部加载完调用，可以用初始化子view的引用
-     * 注意，这里无法获取子view的宽高
+     * 注意，这里无法获取子view的高
      */
     @Override
     protected void onFinishInflate() {
@@ -82,7 +83,7 @@ public class SlideMenu extends FrameLayout {
 
                 if (newScrollX > menuWidth) newScrollX = menuWidth;
                 if (newScrollX < 0) newScrollX = 0;
-
+                Log.e("TAG", "getScrollX: "+getScrollX()+"\n" +"newScrollX:"+newScrollX);
                 scrollTo(newScrollX, 0);
                 downX = moveX;
                 break;
