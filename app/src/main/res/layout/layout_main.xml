@@ -7,28 +7,15 @@
     android:orientation="vertical" >
     
     <LinearLayout android:layout_width="match_parent"
-        android:background="@drawable/top_bar_bg"
         android:gravity="center_vertical"
         android:layout_height="60dp">
         
-        <ImageView android:layout_width="wrap_content"
+        <ImageButton android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/back"
             android:onClick="onClickView"
+            android:contentDescription="点击滑出菜单"
             android:background="@drawable/main_back"/>
-        
-        <View android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/top_bar_divider"/>
-        
-        <TextView android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#ffffff"
-            android:textSize="22sp"
-            android:layout_marginLeft="15dp"
-            android:text="新闻"/>
         
     </LinearLayout>
     
@@ -37,7 +24,7 @@
         android:onClick="onClickView"
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
-        android:text="drawalayour"
+        android:text="自定意右抽屜，活动或者点击"
         android:textColor="#000000"
         android:layout_gravity="center"
         android:textSize="30sp"
