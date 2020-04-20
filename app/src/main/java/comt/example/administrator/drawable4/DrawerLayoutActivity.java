@@ -46,8 +46,6 @@ public class DrawerLayoutActivity extends AppCompatActivity {
         drawalayour = (DrawerLayout) findViewById(R.id.drawalayour);
     }
 
-
-
     public void onClickView(View view) {
         switch (view.getId()) {
             case R.id.drawerlayout:

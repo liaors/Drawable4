@@ -1,30 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="300dp"
+    android:layout_width="360dp"
     android:layout_height="fill_parent"
     android:background="@drawable/menu_bg"
     android:fadingEdge="none"
     android:orientation="vertical">
 
     <LinearLayout
+        android:paddingTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingBottom="300dp">
-
-        <TextView
-            android:id="@+id/text"
-            style="@style/MenuTabText"
-            android:background="#33aa9900"
-            android:clickable="true"
-            android:drawableLeft="@drawable/tab_news"
-            android:text="dsfgds" />
-
-        <TextView
-            style="@style/MenuTabText"
-            android:drawableLeft="@drawable/tab_read"
-            android:text="fgsdfgs" />
-
         <TextView
             style="@style/MenuTabText"
             android:drawableLeft="@drawable/tab_ties"
